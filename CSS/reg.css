@@ -1,0 +1,205 @@
+/************************************************************
+GENERAL STYLES
+************************************************************/
+
+* {
+  font-family: Times New Roman, serif;
+  box-sizing: border-box;
+}
+
+p,
+label {
+  color: #787878;
+}
+
+
+/************************************************************
+HEADER
+************************************************************/
+
+header {
+  background-color: #052F3D;
+  text-align: center;
+  color: #fff;
+  padding: 10px 5px;
+}
+
+header h1 {
+  font-weight: 300;
+}
+/************************************************************
+MAIN BODY
+************************************************************/
+
+#main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#intro {
+  text-align: center;
+  border-bottom: 5px solid #052F3D;
+}
+
+fieldset {
+  border: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+
+#contact-info {
+  margin-top: 3px;
+  width: 100%;
+  
+}
+
+.border_top {
+  border-top: 2px solid #052F3D;
+}
+
+#contact-info fieldset {
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+}
+/************************************************************
+LABELS & FORM CONTROLS
+************************************************************/
+
+legend {
+  font-size: 1.35rem;
+  font-weight: 600;
+  
+}
+
+/*
+#name,
+#email,
+#address,
+#number,
+#city,
+#topics {
+  width: 100%;
+}
+*/
+
+label {
+   display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 15px;
+  background-color: #F0F0F0;
+  box-shadow: none;
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
+/*
+#state {
+  width: 100%;
+  padding: 15px;
+  background-color: #F0F0F0;
+}
+*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+}
+
+select {
+   margin: 15px 0;
+}
+
+input[placeholder] {
+  text-align: right;
+  font-style: oblique;
+}
+
+#zip_code {
+  width: 30%;
+}
+
+button {
+  width: 100%;
+  background-color: #00b3b3;
+  border-radius: 5px;
+  color: white;
+  padding: 18px 0;
+}
+
+legend {
+  margin-bottom: 15px;
+}
+
+.optionslabel {
+   display: inline;
+}
+
+/************************************************************
+MEDIA QUERIES @760px
+************************************************************/
+
+@media screen and (min-width:760px) {
+/*
+  body {
+    background-color: tomato;
+  }
+*/
+   
+  #main-content {
+    width: 60%;
+    margin: 0 auto;
+  }
+ 
+   
+   
+  .lab-col {
+    width: 25%;
+    float: left;
+    display: inline-block;
+    padding: 15px 0;
+    
+    
+/*
+    text-align: left;
+    clear: both;
+    float:left;
+    margin-right:15px;
+*/
+  }
+   
+   .fieldgroup {
+      clear: both;
+   }
+  
+   
+   input[type="text"],
+   input[type="email"],
+   input[type="tel"] {
+     width: 75%;
+     margin-top: 0;
+   }
+   
+   textarea {
+      margin-top: 0;
+   }
+   
+   select {
+      width: 75%;
+      margin-top: 15px;
+   }
+
+}
